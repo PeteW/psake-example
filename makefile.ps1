@@ -1,5 +1,5 @@
 properties {
-	$solutionFile = "C:\Projects\myABILITY\WebSolutions\Ability.Portal\Ability.Portal.sln"
+	$solutionFile = "C:\path\to\my.sln"
 	$msbuildpath = "c:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild"
 }
 
