@@ -1,6 +1,6 @@
 properties {
 	$solutionFile = "C:\Projects\myABILITY\WebSolutions\Ability.Portal\Ability.Portal.sln"
-	$msbuildpath = "c:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild"
+	$msbuildpath = join-path -path (Get-ItemProperty "HKLM:\software\Microsoft\MSBuild\ToolsVersions\4.0")."MSBuildToolsPath" -childpath "msbuild.exe"
 }
 
 task default -depends Test
