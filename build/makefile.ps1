@@ -24,7 +24,7 @@ task TranslateWebConfig -depends Compile -description "This task converts the we
 
 task Compile -depends Clean -description "This task builds the solution" { 
 	& $msbuildpath $solutionFile
-	Assert ($lastexitcode -ne 0) "Compile step failed."
+	Assert ($lastexitcode -eq 0) "Compile step failed."
 }
 
 task Clean -description "This task cleans all output" { 
