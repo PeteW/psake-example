@@ -1,5 +1,5 @@
 properties {
-	$solutionFile = "C:\Projects\myABILITY\WebSolutions\Ability.Portal\Ability.Portal.sln"
+	$solutionFile = "C:\path\to\my.sln"
 	$msbuildpath = join-path -path (Get-ItemProperty "HKLM:\software\Microsoft\MSBuild\ToolsVersions\4.0")."MSBuildToolsPath" -childpath "msbuild.exe"
 }
 
